@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B9D679020C70F3B0052C104 /* PusherSwift in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D678720C70F3B0052C104 /* PusherSwift */; };
+		5B9D679120C70F3B0052C104 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D678820C70F3B0052C104 /* LICENSE */; };
+		5B9D679220C70F3B0052C104 /* Manifest.lock in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D678920C70F3B0052C104 /* Manifest.lock */; };
+		5B9D679320C70F3B0052C104 /* Headers in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D678A20C70F3B0052C104 /* Headers */; };
+		5B9D679420C70F3B0052C104 /* ARKitCarGeolocation.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D678B20C70F3B0052C104 /* ARKitCarGeolocation.xcworkspace */; };
+		5B9D679520C70F3B0052C104 /* Local Podspecs in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D678C20C70F3B0052C104 /* Local Podspecs */; };
+		5B9D679620C70F3B0052C104 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D678D20C70F3B0052C104 /* Podfile */; };
+		5B9D679720C70F3B0052C104 /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D678E20C70F3B0052C104 /* Podfile.lock */; };
+		5B9D679820C70F3B0052C104 /* Target Support Files in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D678F20C70F3B0052C104 /* Target Support Files */; };
 		E40224401FC7D2D0007C6869 /* FloatingPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E402243F1FC7D2D0007C6869 /* FloatingPoint+Extension.swift */; };
 		E40224441FC7D9EE007C6869 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E40224431FC7D9EE007C6869 /* art.scnassets */; };
 		E40224461FC7DCF1007C6869 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40224451FC7DCF1007C6869 /* String+Extension.swift */; };
@@ -18,10 +27,37 @@
 		E4E228781FC6375A00CC6267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4E228761FC6375A00CC6267 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5B9D678320C70F3B0052C104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B9D677E20C70F3B0052C104 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 21711A69CABC4B5D3589C382288CCD0F;
+			remoteInfo = "Pods-ARKitCarGeolocation";
+		};
+		5B9D678520C70F3B0052C104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B9D677E20C70F3B0052C104 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9744F28A76911ED5A949F0B30FA30B1A;
+			remoteInfo = PusherSwift;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		22311364B13A1F4EAB17AE7F /* Pods-ARKitCarGeolocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARKitCarGeolocation.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARKitCarGeolocation/Pods-ARKitCarGeolocation.release.xcconfig"; sourceTree = "<group>"; };
 		2F913ED1FF59DFE1F43FBD29 /* Pods-ARKitCarGeolocation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARKitCarGeolocation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARKitCarGeolocation/Pods-ARKitCarGeolocation.debug.xcconfig"; sourceTree = "<group>"; };
 		5B22D20852317D0D39D687FD /* Pods_ARKitCarGeolocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARKitCarGeolocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B9D677E20C70F3B0052C104 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		5B9D678720C70F3B0052C104 /* PusherSwift */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PusherSwift; path = Pods/PusherSwift; sourceTree = "<group>"; };
+		5B9D678820C70F3B0052C104 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5B9D678920C70F3B0052C104 /* Manifest.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Manifest.lock; path = Pods/Manifest.lock; sourceTree = "<group>"; };
+		5B9D678A20C70F3B0052C104 /* Headers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Headers; path = Pods/Headers; sourceTree = "<group>"; };
+		5B9D678B20C70F3B0052C104 /* ARKitCarGeolocation.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = ARKitCarGeolocation.xcworkspace; sourceTree = "<group>"; };
+		5B9D678C20C70F3B0052C104 /* Local Podspecs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Local Podspecs"; path = "Pods/Local Podspecs"; sourceTree = "<group>"; };
+		5B9D678D20C70F3B0052C104 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		5B9D678E20C70F3B0052C104 /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		5B9D678F20C70F3B0052C104 /* Target Support Files */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Target Support Files"; path = "Pods/Target Support Files"; sourceTree = "<group>"; };
 		E402243F1FC7D2D0007C6869 /* FloatingPoint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Extension.swift"; sourceTree = "<group>"; };
 		E40224431FC7D9EE007C6869 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		E40224451FC7DCF1007C6869 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -46,9 +82,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B9D677F20C70F3B0052C104 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B9D678420C70F3B0052C104 /* Pods_ARKitCarGeolocation.framework */,
+				5B9D678620C70F3B0052C104 /* PusherSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		742D819EDD7F22DDCB914004 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				5B9D678B20C70F3B0052C104 /* ARKitCarGeolocation.xcworkspace */,
+				5B9D678A20C70F3B0052C104 /* Headers */,
+				5B9D678820C70F3B0052C104 /* LICENSE */,
+				5B9D678C20C70F3B0052C104 /* Local Podspecs */,
+				5B9D678920C70F3B0052C104 /* Manifest.lock */,
+				5B9D678D20C70F3B0052C104 /* Podfile */,
+				5B9D678E20C70F3B0052C104 /* Podfile.lock */,
+				5B9D677E20C70F3B0052C104 /* Pods.xcodeproj */,
+				5B9D678720C70F3B0052C104 /* PusherSwift */,
+				5B9D678F20C70F3B0052C104 /* Target Support Files */,
 				2F913ED1FF59DFE1F43FBD29 /* Pods-ARKitCarGeolocation.debug.xcconfig */,
 				22311364B13A1F4EAB17AE7F /* Pods-ARKitCarGeolocation.release.xcconfig */,
 			);
@@ -109,7 +164,6 @@
 				E4E228671FC6375A00CC6267 /* Frameworks */,
 				E4E228681FC6375A00CC6267 /* Resources */,
 				B526453361DCB29796065586 /* [CP] Embed Pods Frameworks */,
-				3CCD077BAAE71767084582A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -147,6 +201,12 @@
 			mainGroup = E4E228611FC6375A00CC6267;
 			productRefGroup = E4E2286B1FC6375A00CC6267 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5B9D677F20C70F3B0052C104 /* Products */;
+					ProjectRef = 5B9D677E20C70F3B0052C104 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E4E228691FC6375A00CC6267 /* ARKitCarGeolocation */,
@@ -154,36 +214,47 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		5B9D678420C70F3B0052C104 /* Pods_ARKitCarGeolocation.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_ARKitCarGeolocation.framework;
+			remoteRef = 5B9D678320C70F3B0052C104 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5B9D678620C70F3B0052C104 /* PusherSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PusherSwift.framework;
+			remoteRef = 5B9D678520C70F3B0052C104 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		E4E228681FC6375A00CC6267 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B9D679120C70F3B0052C104 /* LICENSE in Resources */,
 				E4E228781FC6375A00CC6267 /* LaunchScreen.storyboard in Resources */,
 				E40224441FC7D9EE007C6869 /* art.scnassets in Resources */,
+				5B9D679320C70F3B0052C104 /* Headers in Resources */,
+				5B9D679820C70F3B0052C104 /* Target Support Files in Resources */,
+				5B9D679520C70F3B0052C104 /* Local Podspecs in Resources */,
+				5B9D679020C70F3B0052C104 /* PusherSwift in Resources */,
+				5B9D679720C70F3B0052C104 /* Podfile.lock in Resources */,
+				5B9D679420C70F3B0052C104 /* ARKitCarGeolocation.xcworkspace in Resources */,
+				5B9D679220C70F3B0052C104 /* Manifest.lock in Resources */,
 				E4E228751FC6375A00CC6267 /* Assets.xcassets in Resources */,
 				E4E228731FC6375A00CC6267 /* Main.storyboard in Resources */,
+				5B9D679620C70F3B0052C104 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3CCD077BAAE71767084582A3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARKitCarGeolocation/Pods-ARKitCarGeolocation-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B526453361DCB29796065586 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,11 +440,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = N3WMALQ5Y8;
 				INFOPLIST_FILE = ARKitCarGeolocation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.ARKitCarGeolocation;
+				PRODUCT_BUNDLE_IDENTIFIER = demo.ARPoints;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -386,11 +457,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = N3WMALQ5Y8;
 				INFOPLIST_FILE = ARKitCarGeolocation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.ARKitCarGeolocation;
+				PRODUCT_BUNDLE_IDENTIFIER = demo.ARPoints;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

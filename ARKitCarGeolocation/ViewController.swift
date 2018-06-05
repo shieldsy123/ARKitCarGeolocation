@@ -39,10 +39,10 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
     var originalTransform:SCNMatrix4!
     
     let pusher = Pusher(
-        key: "YOUR_PUSHER_APP_KEY",
+        key: "6dd4c8d07bfad2f8633b",
         options: PusherClientOptions(
-            authMethod: .inline(secret: "YOUR_PUSHER_APP_SECRET"),
-            host: .cluster("YOUR_PUSHER_APP_CLUSTER")
+            authMethod: .inline(secret: "9adb47ba6458c3e3d14c"),
+            host: .cluster("us2")
         )
     )
     var channel: PusherChannel!
