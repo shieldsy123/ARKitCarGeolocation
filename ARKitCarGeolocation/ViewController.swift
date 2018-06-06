@@ -39,12 +39,13 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
     var originalTransform:SCNMatrix4!
     
     let pusher = Pusher(
-        key: "6dd4c8d07bfad2f8633b",
+        key: "1ba5d4eeb10aa3690502",
         options: PusherClientOptions(
-            authMethod: .inline(secret: "9adb47ba6458c3e3d14c"),
+            authMethod: .inline(secret: "bff2538929f1884e5ab4"),
             host: .cluster("us2")
         )
     )
+    
     var channel: PusherChannel!
     
     override func viewDidLoad() {
@@ -132,7 +133,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
                 if let latitude = Double(data["latitude"] as! String),
                       let longitude = Double(data["longitude"] as! String),
                       let heading = Double(data["heading"] as! String)  {
-                    self.status = "Driver's location received"
+                    self.status = "Bus' location received"
                     
                     self.heading = heading
                     self.updateLocation(latitude, longitude)
@@ -141,7 +142,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
         })
         
         pusher.connect()
-        status = "Waiting to receive location events..."
+        status = "Waiting to receive bus route..."
     }
     
     func updateLocation(_ latitude : Double, _ longitude : Double) {
@@ -207,6 +208,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
     
     func scaleNode (_ location: CLLocation) -> SCNVector3 {
         let scale = max( min( Float(1000/distance), 1.5 ), 3 )
+        print(scale)
         return SCNVector3(x: scale, y: scale, z: scale)
     }
     
@@ -219,7 +221,9 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
         let rotationMatrix = rotateAroundY(matrix_identity_float4x4, Float(bearing))
         
         let position = vector_float4(0.0, 0.0, -distance, 0.0)
+        print(position)
         let translationMatrix = getTranslationMatrix(matrix_identity_float4x4, position)
+        print(translationMatrix)
         
         let transformMatrix = simd_mul(rotationMatrix, translationMatrix)
         
