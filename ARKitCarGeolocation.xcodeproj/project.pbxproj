@@ -34,6 +34,7 @@
 		E7BC119D20C98E79009F11C8 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BC119A20C98E79009F11C8 /* Scene.swift */; };
 		E7BC119F20C990AE009F11C8 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BC119E20C990AE009F11C8 /* ContainerViewController.swift */; };
 		E7BC11A120C99298009F11C8 /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E7BC11A020C99298009F11C8 /* Scene.sks */; };
+		E7BC11A320C9DB52009F11C8 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BC11A220C9DB51009F11C8 /* ARViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		E7BC119A20C98E79009F11C8 /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		E7BC119E20C990AE009F11C8 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		E7BC11A020C99298009F11C8 /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
+		E7BC11A220C9DB51009F11C8 /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 		E4E2286C1FC6375A00CC6267 /* ARKitCarGeolocation */ = {
 			isa = PBXGroup;
 			children = (
+				E7BC11A220C9DB51009F11C8 /* ARViewController.swift */,
 				E7BC11A020C99298009F11C8 /* Scene.sks */,
 				E7BC119E20C990AE009F11C8 /* ContainerViewController.swift */,
 				E7BC119A20C98E79009F11C8 /* Scene.swift */,
@@ -343,6 +346,7 @@
 				E4E228701FC6375A00CC6267 /* ViewController.swift in Sources */,
 				5B9D67A120C989EF0052C104 /* ARPOIUI.swift in Sources */,
 				5B9D679F20C989C20052C104 /* ARAnnotation.swift in Sources */,
+				E7BC11A320C9DB52009F11C8 /* ARViewController.swift in Sources */,
 				E4E2286E1FC6375A00CC6267 /* AppDelegate.swift in Sources */,
 				E7BC119F20C990AE009F11C8 /* ContainerViewController.swift in Sources */,
 				E7BC119D20C98E79009F11C8 /* Scene.swift in Sources */,
