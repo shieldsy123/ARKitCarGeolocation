@@ -18,6 +18,7 @@ class ContainerViewController: UIViewController {
     @IBOutlet var refreshButton: CustomButton!
     
     var arView: ARViewController!
+    var carView: ViewController!
     var showsDebuggingLabels: Bool = false
     // location
     fileprivate let locationManager = CLLocationManager()
@@ -43,6 +44,15 @@ class ContainerViewController: UIViewController {
         self.view.insertSubview(arView.view, at: 0)
         arView.didMove(toParentViewController: self)
         addConstraintsFor(arView.view, width: screenSize.width, idPrefix: "ar")
+        
+        
+        // add AR subview
+        carView = self.storyboard?.instantiateViewController(withIdentifier: "carView") as! ViewController
+        self.addChildViewController(carView)
+        carView.view.frame = CGRect(x:0, y:0, width:screenSize.width, height:screenSize.height)
+        self.view.insertSubview(carView.view, at: 0)
+        carView.didMove(toParentViewController: self)
+        addConstraintsFor(carView.view, width: screenSize.width, idPrefix: "car")
         
         // location
         locationManager.delegate = self

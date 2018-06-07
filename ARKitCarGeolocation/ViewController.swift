@@ -17,9 +17,8 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
 
    
     @IBOutlet weak var statusTextView: UITextView!
-    //@IBOutlet weak var overlayView: ARSKView!
-    @IBOutlet weak var sceneView: ARSCNView!
-    
+
+    @IBOutlet weak var overlayView: ARSCNView!
     
     //POI
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -68,7 +67,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
         super.viewDidLoad()
         
         // Set the view's delegate
-        sceneView.delegate = self
+        overlayView.delegate = self
         
         
         // Show statistics such as fps and node count
@@ -79,7 +78,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
         let scene = SCNScene()
         
         // Set the scene to the view
-        sceneView.scene = scene
+        overlayView.scene = scene
         
         
         
@@ -107,14 +106,14 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
         configuration.worldAlignment = .gravityAndHeading
         
         // Run the view's session
-        sceneView.session.run(configuration)
+        overlayView.session.run(configuration)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
         // Pause the view's session
-        sceneView.session.pause()
+        overlayView.session.pause()
     }
 
     
@@ -200,7 +199,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
             positionModel(location)
             
             // Add the model to the scene
-            sceneView.scene.rootNode.addChildNode(self.modelNode)
+            overlayView.scene.rootNode.addChildNode(self.modelNode)
             
             // Create arrow from the emoji
             let arrow = makeBillboardNode("⬇️".image()!)

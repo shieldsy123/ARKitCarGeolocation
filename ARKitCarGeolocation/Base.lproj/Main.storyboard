@@ -80,7 +80,7 @@
         <!--View Controller-->
         <scene sceneID="LRY-yg-OH4">
             <objects>
-                <viewController id="x8Q-Vi-G06" customClass="ViewController" customModule="ARKitCarGeolocation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="carView" id="x8Q-Vi-G06" customClass="ViewController" customModule="ARKitCarGeolocation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F7O-T1-TUm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,19 +112,19 @@
                         <viewLayoutGuide key="safeArea" id="MvM-yE-DwI"/>
                     </view>
                     <connections>
-                        <outlet property="overlayView" destination="Qii-28-xvq" id="Quj-ez-Uvf"/>
+                        <outlet property="overlayView" destination="Qii-28-xvq" id="Dop-pI-tuM"/>
                         <outlet property="statusTextView" destination="HtE-4j-wb4" id="kMm-kz-IFi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jEI-bU-bqf" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-20" y="32"/>
+            <point key="canvasLocation" x="231" y="32"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9US-Tk-Y8S">
             <objects>
                 <viewController storyboardIdentifier="arView" id="GjM-uJ-bnR" customClass="ARViewController" customModule="AR_POI" customModuleProvider="target" sceneMemberID="viewController">
-                    <arskView key="view" contentMode="scaleToFill" id="nOi-X2-M8T">
+                    <arskView key="view" contentMode="scaleToFill" allowsTransparency="YES" id="nOi-X2-M8T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </arskView>
@@ -134,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="65K-km-w4H" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="686" y="32"/>
+            <point key="canvasLocation" x="1111" y="32"/>
         </scene>
     </scenes>
 </document>
