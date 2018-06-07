@@ -31,6 +31,9 @@
 		E4E228731FC6375A00CC6267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4E228711FC6375A00CC6267 /* Main.storyboard */; };
 		E4E228751FC6375A00CC6267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4E228741FC6375A00CC6267 /* Assets.xcassets */; };
 		E4E228781FC6375A00CC6267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4E228761FC6375A00CC6267 /* LaunchScreen.storyboard */; };
+		E7BC119D20C98E79009F11C8 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BC119A20C98E79009F11C8 /* Scene.swift */; };
+		E7BC119F20C990AE009F11C8 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BC119E20C990AE009F11C8 /* ContainerViewController.swift */; };
+		E7BC11A120C99298009F11C8 /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E7BC11A020C99298009F11C8 /* Scene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		E4E228741FC6375A00CC6267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4E228771FC6375A00CC6267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4E228791FC6375A00CC6267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7BC119A20C98E79009F11C8 /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		E7BC119E20C990AE009F11C8 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		E7BC11A020C99298009F11C8 /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +170,9 @@
 		E4E2286C1FC6375A00CC6267 /* ARKitCarGeolocation */ = {
 			isa = PBXGroup;
 			children = (
+				E7BC11A020C99298009F11C8 /* Scene.sks */,
+				E7BC119E20C990AE009F11C8 /* ContainerViewController.swift */,
+				E7BC119A20C98E79009F11C8 /* Scene.swift */,
 				5B9D679D20C989A70052C104 /* Supporting files */,
 				E4E2286D1FC6375A00CC6267 /* AppDelegate.swift */,
 				E4E2286F1FC6375A00CC6267 /* ViewController.swift */,
@@ -270,6 +279,7 @@
 				5B9D679520C70F3B0052C104 /* Local Podspecs in Resources */,
 				5B9D679020C70F3B0052C104 /* PusherSwift in Resources */,
 				5B9D679720C70F3B0052C104 /* Podfile.lock in Resources */,
+				E7BC11A120C99298009F11C8 /* Scene.sks in Resources */,
 				5B9D679420C70F3B0052C104 /* ARKitCarGeolocation.xcworkspace in Resources */,
 				5B9D679220C70F3B0052C104 /* Manifest.lock in Resources */,
 				E4E228751FC6375A00CC6267 /* Assets.xcassets in Resources */,
@@ -334,6 +344,8 @@
 				5B9D67A120C989EF0052C104 /* ARPOIUI.swift in Sources */,
 				5B9D679F20C989C20052C104 /* ARAnnotation.swift in Sources */,
 				E4E2286E1FC6375A00CC6267 /* AppDelegate.swift in Sources */,
+				E7BC119F20C990AE009F11C8 /* ContainerViewController.swift in Sources */,
+				E7BC119D20C98E79009F11C8 /* Scene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,11 +484,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N3WMALQ5Y8;
+				DEVELOPMENT_TEAM = 2LUMRAPPDN;
 				INFOPLIST_FILE = ARKitCarGeolocation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = demo.ARPoints;
+				PRODUCT_BUNDLE_IDENTIFIER = demo.ARPointsEric;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -489,11 +501,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N3WMALQ5Y8;
+				DEVELOPMENT_TEAM = 2LUMRAPPDN;
 				INFOPLIST_FILE = ARKitCarGeolocation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = demo.ARPoints;
+				PRODUCT_BUNDLE_IDENTIFIER = demo.ARPointsEric;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
