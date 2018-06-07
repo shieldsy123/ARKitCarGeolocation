@@ -8,7 +8,7 @@
 
 import UIKit
 import ARKit
-
+import SpriteKit
 import SceneKit
 import CoreLocation
 import PusherSwift
@@ -17,6 +17,13 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
 
     @IBOutlet weak var sceneView: ARSCNView!
     @IBOutlet weak var statusTextView: UITextView!
+    
+    // set anchor distances (m) for nearest and farthest
+    let anchorDistNearest: Float = 1
+    let anchorDistFarthest: Float = 4
+    // set anchor heights (degrees) for nearest and farthest
+    let anchorDegreesNearest: Double = 0
+    let anchorDegreesFarthest: Double = 15
     
     let locationManager = CLLocationManager()
     var userLocation = CLLocation()
@@ -53,6 +60,10 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
         
         // Set the view's delegate
         sceneView.delegate = self
+        
+        // Show statistics such as fps and node count
+        // sceneView.showsFPS = true
+        // sceneView.showsNodeCount = true
         
         // Create a new scene
         let scene = SCNScene()

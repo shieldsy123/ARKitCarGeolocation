@@ -16,6 +16,12 @@
 		5B9D679620C70F3B0052C104 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D678D20C70F3B0052C104 /* Podfile */; };
 		5B9D679720C70F3B0052C104 /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D678E20C70F3B0052C104 /* Podfile.lock */; };
 		5B9D679820C70F3B0052C104 /* Target Support Files in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D678F20C70F3B0052C104 /* Target Support Files */; };
+		5B9D679F20C989C20052C104 /* ARAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D679E20C989C10052C104 /* ARAnnotation.swift */; };
+		5B9D67A120C989EF0052C104 /* ARPOIUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D67A020C989EF0052C104 /* ARPOIUI.swift */; };
+		5B9D67A320C98A0B0052C104 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D67A220C98A0B0052C104 /* CustomViews.swift */; };
+		5B9D67A520C98A1F0052C104 /* MatrixHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D67A420C98A1F0052C104 /* MatrixHelper.swift */; };
+		5B9D67A720C98A450052C104 /* PlaceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D67A620C98A450052C104 /* PlaceLoader.swift */; };
+		5B9D67A920C98A550052C104 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D67A820C98A550052C104 /* CustomButton.swift */; };
 		E40224401FC7D2D0007C6869 /* FloatingPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E402243F1FC7D2D0007C6869 /* FloatingPoint+Extension.swift */; };
 		E40224441FC7D9EE007C6869 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E40224431FC7D9EE007C6869 /* art.scnassets */; };
 		E40224461FC7DCF1007C6869 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40224451FC7DCF1007C6869 /* String+Extension.swift */; };
@@ -58,6 +64,12 @@
 		5B9D678D20C70F3B0052C104 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		5B9D678E20C70F3B0052C104 /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		5B9D678F20C70F3B0052C104 /* Target Support Files */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Target Support Files"; path = "Pods/Target Support Files"; sourceTree = "<group>"; };
+		5B9D679E20C989C10052C104 /* ARAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARAnnotation.swift; sourceTree = "<group>"; };
+		5B9D67A020C989EF0052C104 /* ARPOIUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPOIUI.swift; sourceTree = "<group>"; };
+		5B9D67A220C98A0B0052C104 /* CustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
+		5B9D67A420C98A1F0052C104 /* MatrixHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixHelper.swift; sourceTree = "<group>"; };
+		5B9D67A620C98A450052C104 /* PlaceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceLoader.swift; sourceTree = "<group>"; };
+		5B9D67A820C98A550052C104 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		E402243F1FC7D2D0007C6869 /* FloatingPoint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Extension.swift"; sourceTree = "<group>"; };
 		E40224431FC7D9EE007C6869 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		E40224451FC7DCF1007C6869 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -91,6 +103,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		5B9D679D20C989A70052C104 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				5B9D679E20C989C10052C104 /* ARAnnotation.swift */,
+				5B9D67A020C989EF0052C104 /* ARPOIUI.swift */,
+				5B9D67A220C98A0B0052C104 /* CustomViews.swift */,
+				5B9D67A420C98A1F0052C104 /* MatrixHelper.swift */,
+				5B9D67A620C98A450052C104 /* PlaceLoader.swift */,
+				5B9D67A820C98A550052C104 /* CustomButton.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
 		742D819EDD7F22DDCB914004 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +146,7 @@
 		E4E228611FC6375A00CC6267 = {
 			isa = PBXGroup;
 			children = (
+				5B9D679D20C989A70052C104 /* Supporting files */,
 				E4E2286C1FC6375A00CC6267 /* ARKitCarGeolocation */,
 				E4E2286B1FC6375A00CC6267 /* Products */,
 				742D819EDD7F22DDCB914004 /* Pods */,
@@ -300,7 +326,13 @@
 			files = (
 				E40224461FC7DCF1007C6869 /* String+Extension.swift in Sources */,
 				E40224401FC7D2D0007C6869 /* FloatingPoint+Extension.swift in Sources */,
+				5B9D67A720C98A450052C104 /* PlaceLoader.swift in Sources */,
+				5B9D67A520C98A1F0052C104 /* MatrixHelper.swift in Sources */,
+				5B9D67A920C98A550052C104 /* CustomButton.swift in Sources */,
+				5B9D67A320C98A0B0052C104 /* CustomViews.swift in Sources */,
 				E4E228701FC6375A00CC6267 /* ViewController.swift in Sources */,
+				5B9D67A120C989EF0052C104 /* ARPOIUI.swift in Sources */,
+				5B9D679F20C989C20052C104 /* ARAnnotation.swift in Sources */,
 				E4E2286E1FC6375A00CC6267 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
