@@ -146,7 +146,6 @@
 		E4E228611FC6375A00CC6267 = {
 			isa = PBXGroup;
 			children = (
-				5B9D679D20C989A70052C104 /* Supporting files */,
 				E4E2286C1FC6375A00CC6267 /* ARKitCarGeolocation */,
 				E4E2286B1FC6375A00CC6267 /* Products */,
 				742D819EDD7F22DDCB914004 /* Pods */,
@@ -165,6 +164,7 @@
 		E4E2286C1FC6375A00CC6267 /* ARKitCarGeolocation */ = {
 			isa = PBXGroup;
 			children = (
+				5B9D679D20C989A70052C104 /* Supporting files */,
 				E4E2286D1FC6375A00CC6267 /* AppDelegate.swift */,
 				E4E2286F1FC6375A00CC6267 /* ViewController.swift */,
 				E4E228711FC6375A00CC6267 /* Main.storyboard */,
