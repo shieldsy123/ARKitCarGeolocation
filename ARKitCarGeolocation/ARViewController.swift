@@ -15,6 +15,9 @@ class ARViewController: UIViewController, ARSKViewDelegate {
     
     @IBOutlet var sceneView: ARSKView!
     
+    var carView: ViewController!
+    var arView: ARViewController!
+    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var annotations = [ARAnnotation]()
     
@@ -28,6 +31,7 @@ class ARViewController: UIViewController, ARSKViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
         sceneView.delegate = self
         
         // Show statistics such as fps and node count
@@ -40,6 +44,22 @@ class ARViewController: UIViewController, ARSKViewDelegate {
         }
         // listen for notif to remove nodes
         NotificationCenter.default.addObserver(self, selector: #selector(removeNodes), name: Notification.Name("shouldRemoveNodes"), object: nil)
+        
+        
+        
+        let screenSize = UIScreen.main.bounds.size
+        
+        
+        // add AR subview
+        carView = self.storyboard?.instantiateViewController(withIdentifier: "carView") as! ViewController
+        self.addChildViewController(carView)
+        carView.view.frame = CGRect(x:0, y:0, width:screenSize.width, height:screenSize.height)
+        self.view.insertSubview(carView.view, at: 0)
+        carView.didMove(toParentViewController: self)
+        addConstraintsFor(carView.view, width: screenSize.width, idPrefix: "car")
+        
+        
+        //arView.activateARView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -51,6 +71,25 @@ class ARViewController: UIViewController, ARSKViewDelegate {
         
         sceneView.session.pause()
     }
+    
+    func addConstraintsFor(_ nestedView: UIView, width: CGFloat, idPrefix: String) {
+        
+        nestedView.translatesAutoresizingMaskIntoConstraints = false
+        let topConstraint = NSLayoutConstraint(item: nestedView, attribute: .top, relatedBy: .equal, toItem: self.view, attribute: .top, multiplier: 1, constant: 0)
+        topConstraint.identifier = idPrefix + "TopConstraint"
+        self.view.addConstraint(topConstraint)
+        let bottomConstraint = NSLayoutConstraint(item: nestedView, attribute: .bottom, relatedBy: .equal, toItem: self.view, attribute: .bottom, multiplier: 1, constant: 0)
+        bottomConstraint.identifier = idPrefix + "BottomConstraint"
+        self.view.addConstraint(bottomConstraint)
+        let leftConstraint = NSLayoutConstraint(item: nestedView, attribute: .left, relatedBy: .equal, toItem: self.view, attribute: .left, multiplier: 1, constant: 0)
+        leftConstraint.identifier = idPrefix + "LeftConstraint"
+        self.view.addConstraint(leftConstraint)
+        let rightConstraint = NSLayoutConstraint(item: nestedView, attribute: .right, relatedBy: .equal, toItem: self.view, attribute: .right, multiplier: 1, constant: 0)
+        rightConstraint.identifier = idPrefix + "RightConstraint"
+        self.view.addConstraint(rightConstraint)
+    }
+    
+    
     
     func activateARView() {
         let config = ARWorldTrackingConfiguration()
