@@ -201,16 +201,16 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
             // Add the model to the scene
             overlayView.scene.rootNode.addChildNode(self.modelNode)
             
-            // Create arrow from the emoji
-            let arrow = makeBillboardNode("⬇️".image()!)
+            // Create bus from the emoji
+            let bus = makeBillboardNode("🚍".image()!)
             // Position it on top of the car
-            arrow.position = SCNVector3Make(0, 4, 0)
+            bus.position = SCNVector3Make(0, 4, 0)
             // Add it as a child of the car model
-            self.modelNode.addChildNode(arrow)
+            self.modelNode.addChildNode(bus)
         } else {
             // Begin animation
             SCNTransaction.begin()
-            SCNTransaction.animationDuration = 1.0
+            SCNTransaction.animationDuration = 30.0
             
             // Position the model in the correct place
             positionModel(location)
@@ -257,7 +257,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
         
         
         // third position was 'distance', now hard-coded to -100
-        let position = vector_float4(0.0, 0.0, -100, 0.0)
+        let position = vector_float4(0.0, 0.0, -1000, 0.0)
         print(position)
         let translationMatrix = getTranslationMatrix(matrix_identity_float4x4, position)
         print(translationMatrix)
@@ -300,7 +300,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
     }
     
     func makeBillboardNode(_ image: UIImage) -> SCNNode {
-        let plane = SCNPlane(width: 10, height: 10)
+        let plane = SCNPlane(width: 200, height: 200)
         plane.firstMaterial!.diffuse.contents = image
         let node = SCNNode(geometry: plane)
         node.constraints = [SCNBillboardConstraint()]
